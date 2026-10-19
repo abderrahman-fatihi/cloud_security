@@ -1,0 +1,4 @@
+## AFTER (fixed state) - 2026-10-18T12:40:51Z
+
+aws: [ERROR]: An error occurred (NoSuchBucketPolicy) when calling the GetBucketPolicyStatus operation: The bucket policy does not exist
+[]

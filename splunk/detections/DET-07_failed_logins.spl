@@ -1,0 +1,4 @@
+# MITRE: T1110 - Brute Force
+index=main sourcetype=aws:cloudtrail eventName=ConsoleLogin responseElements.ConsoleLogin=Failure
+| stats count min(_time) as first max(_time) as last values(sourceIPAddress) as ips by userIdentity.type
+| convert ctime(first) ctime(last)

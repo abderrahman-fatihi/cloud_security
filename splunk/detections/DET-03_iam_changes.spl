@@ -1,0 +1,3 @@
+# MITRE: T1098 - Account Manipulation
+index=main sourcetype=aws:cloudtrail (eventName=CreateRole OR eventName=PutRolePolicy OR eventName=AttachRolePolicy OR eventName=CreateUser OR eventName=CreateAccessKey OR eventName=AttachUserPolicy)
+| table _time userIdentity.arn eventName requestParameters.roleName requestParameters.userName

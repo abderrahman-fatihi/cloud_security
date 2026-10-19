@@ -1,0 +1,3 @@
+# MITRE: T1562.008 - Disable Cloud Logs
+index=main sourcetype=aws:cloudtrail (eventName=StopLogging OR eventName=DeleteTrail OR eventName=UpdateTrail OR eventName=PutEventSelectors)
+| table _time userIdentity.arn eventName sourceIPAddress

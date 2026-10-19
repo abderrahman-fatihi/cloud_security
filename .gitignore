@@ -1,0 +1,9 @@
+*.tfstate*
+*.tfvars
+.terraform/
+.env
+*.pem
+splunk/logs/
+splunk/logs_flat/
+docs/prowler-before/
+docs/prowler-after/

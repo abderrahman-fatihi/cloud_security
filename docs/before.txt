@@ -1,0 +1,21 @@
+## BEFORE (vulnerable state) - 2026-10-17T14:59:34Z
+{
+    "PolicyStatus": {
+        "IsPublic": true
+    }
+}
+[
+    {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "UserIdGroupPairs": [],
+        "IpRanges": [
+            {
+                "CidrIp": "0.0.0.0/0"
+            }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": []
+    }
+]

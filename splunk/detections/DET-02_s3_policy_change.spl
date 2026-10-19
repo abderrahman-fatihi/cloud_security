@@ -1,0 +1,3 @@
+# MITRE: T1530 - Data from Cloud Storage
+index=main sourcetype=aws:cloudtrail (eventName=PutBucketPolicy OR eventName=PutBucketPublicAccessBlock OR eventName=DeleteBucketPublicAccessBlock OR eventName=PutBucketAcl)
+| table _time userIdentity.arn eventName requestParameters.bucketName sourceIPAddress

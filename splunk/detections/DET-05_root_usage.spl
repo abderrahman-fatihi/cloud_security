@@ -1,0 +1,4 @@
+# MITRE: T1078.004 - Valid Accounts: Cloud Accounts
+index=main sourcetype=aws:cloudtrail userIdentity.type=Root
+| stats count min(_time) as first max(_time) as last by eventName sourceIPAddress
+| convert ctime(first) ctime(last)
