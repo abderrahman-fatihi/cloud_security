@@ -111,4 +111,4 @@ Never commit `.env`, `*.tfstate*`, or the `logs/` folders. Account IDs and publi
 
 ## 8. Security watch
 
-Sources followed while building this: AWS Security Blog, CISA advisories, MITRE ATT&CK for Cloud, Splunk Security Content. *(Keep this line only if true.)*
+Sources followed while building this: AWS Security Blog, CISA advisories, MITRE ATT&CK for Cloud, Splunk Security Content.
